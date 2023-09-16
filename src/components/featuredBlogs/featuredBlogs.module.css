@@ -1,0 +1,113 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .wrapper {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align:center ;
+  }
+  
+  .blogs {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .left {
+    flex: 1;
+  }
+  
+  .mainBlog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainBlog img {
+    width: 100%;
+    border-radius: 10px;
+    min-width: 700px;
+    min-height: 400px; /* 增大图片的最小高度 */
+  }
+  
+  .mainBlogData {
+    color: #000000;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9); /* 添加一个半透明背景 */
+  }
+  
+  .mainBlogData h4 {
+    font-size: 32px; /* 增大标题的字体大小 */
+    margin-bottom: 10px; /* 添加一些底部间距 */
+  }
+  
+  
+  .categoryAndMetadata {
+    display: flex;
+    align-items: center;
+  }
+  
+  .category {
+    background-color: #5e7d9a;
+    padding: 4px 8px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .metadata {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .metadata svg {
+    margin-right: 4px;
+  }
+  
+  .authorAndCreatedAt {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .secondaryBlog img {
+    width: 100%;
+    border-radius: 10px;
+    min-height: 200px; /* 添加固定的最小高度 */
+  }
+  
+  .secondaryBlogData h4 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .desc {
+    color: #333;
+  }
+  
+  .authorAndCreatedAt span {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .authorAndCreatedAt span span {
+    font-weight: bold;
+    margin-right: 4px;
+  }
+  
