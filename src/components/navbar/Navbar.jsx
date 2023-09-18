@@ -2,9 +2,17 @@ import classes from './navbar.module.css'
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 import profileImg from '../../assets/profile.jpg'
+import { useDispatch } from 'react-redux'; 
+import { logout } from '../../redux/authSlice';
 
 const Navbar = () => {
   const [showModel, setShowModel] = useState(false)
+  const dispatch = useDispatch()
+
+  const handleLogout = () => {
+    // 在点击 "Log out" 时调用 logout action
+    dispatch(logout());
+  };
   return (
     <div className={classes.container}>
        <div className={classes.wrapper}> 
@@ -23,7 +31,7 @@ const Navbar = () => {
        {showModel && 
        <div className={classes.model}>
        <Link to='/create'>Create Memories</Link>
-       <span>Log out</span>
+       <span onClick={handleLogout}>Log out</span>
         </div>
         }
        </div>

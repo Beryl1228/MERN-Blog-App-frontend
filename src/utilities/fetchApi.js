@@ -1,5 +1,5 @@
 // Define a constant for the base URL of the server
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "http://localhost:3001";
 
 // Define a function named 'request' for making HTTP requests
 export const request = async (url, method, headers = {}, body = {}, isNotStringified = false) => {
@@ -24,8 +24,10 @@ export const request = async (url, method, headers = {}, body = {}, isNotStringi
                 // If yes, stringify the body as JSON and send a POST request
                 res = await fetch(BASE_URL + url, { headers, method, body: JSON.stringify({ ...body }) });
             }
+            
             // Parse the response as JSON and return the data
             data = await res.json();
+            console.log(data);
             return data;
 
         case 'PUT':
