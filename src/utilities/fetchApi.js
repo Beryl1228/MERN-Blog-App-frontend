@@ -1,5 +1,5 @@
 // Define a constant for the base URL of the server
-const BASE_URL = "http://localhost:3001";
+const BASE_URL =" https://mern-blog-app-vcoz.onrender.com"
 
 // Define a function named 'request' for making HTTP requests
 export const request = async (url, method, headers = {}, body = {}, isNotStringified = false) => {
